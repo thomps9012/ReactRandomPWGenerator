@@ -1,6 +1,7 @@
-import React, { useState, e } from 'react';
-import generator from './generate-password';
+import React, { useState } from 'react';
 import "./App.css"
+var generator = require('generate-password');
+
 
 function App() {
   // using our state to set parameters for the password generator
@@ -11,8 +12,8 @@ function App() {
   const [isNumbers, setIsNumbers] = useState(false);
   const [isSymbols, setIsSymbols] = useState(false);
 
-  const generatePassword = () => {
-    const pwd = generator.generate({
+  var generatePassword = () => {
+    var pwd = generator.generate({
       length: length,
       lowercase: isLowerCase,
       uppercase: isUpperCase,
