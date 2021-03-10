@@ -1,5 +1,6 @@
 import React, { useState, e } from 'react';
 import generator from './generate-password';
+import "./App.css"
 
 function App() {
   // using our state to set parameters for the password generator
@@ -23,16 +24,21 @@ function App() {
 
   return (
     <div>
-      <h5>Generate a Random Password!</h5>
+      <br></br>
+      <h1>Generate a Random Password!</h1>
+      <br></br>
       <div className="container">
+      <small id="note"><h5>Note:</h5> At least one should be true</small>
+      <br></br>
         <div className="row">
           <div className="col">
-            <label>
+            <label id="length">
               <span className="lbl-len">Length: </span>
               <input type="number" className="input-len form-control" value={length} onChange={e => setLength(e.target.value)} />
             </label>
           </div>
         </div>
+        <br></br>
           <div className="row">
             <div className="col">
               <label className="form-control">
@@ -61,17 +67,21 @@ function App() {
               </label>
             </div>
           </div>
-          <small><h5>Note:</h5> At least one should be true</small>
+          <br></br>
+          
           <div className="row">
             <div className="col">
               <input type="button" className="btn btn-dark mt-2 mb-3" value="Generate Password" onClick={generatePassword} />
+              <br></br>
                 <div>
-                  Password: {password}
+                  <h3>Password: {password}</h3>
                 </div>
               
             </div>
           </div>
       </div>
+      <br></br>
+      <br></br>
       <h5>App was created with help from <a href="https://www.cluemediator.com/generate-a-random-password-in-react" target="_blank" rel="noopener noreferrer">Clue Mediator</a></h5>
       <div><h5>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h5></div>
     </div>
