@@ -29,7 +29,7 @@ function App() {
       <h1>Generate a Random Password!</h1>
       <br></br>
       <div className="container">
-      <small id="note"><h5>Note:</h5> At least one should be true</small>
+      <small id="note"><h5>Note:</h5> At least one of the below should be true</small>
       <br></br>
         <div className="row">
           <div className="col">

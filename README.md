@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# React Random Password Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple one page application that you can run locally to generate random password, based on factors such as length, special characters, uppercase / lowercase, etc.
+
+Feel free to run the app locally or if you'd like to deploy it to heroku follow the instructions on deployment below.
 
 ## Available Scripts
 
@@ -45,26 +47,25 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
 ### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you'd like to deploy this app, I'd recommend Heroku, as it's easily set up to handle React.js deployments. This can also all be accomplished via the terminal / command line (as long as you have an active heroku account).
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+----
+```
+<!-- places the terminal in our project -->
+git init
+<!-- adds mar's heroku buildpack to the project  while also creating the heroku project-->
+heroku create -b https://github.com/mars/create-react-app-buildpack
+git add .
+git commit -m "add in your description here"
+git push heroku master
+heroku open
+```
+----
+#### Success!
